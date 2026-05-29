@@ -1,0 +1,26 @@
+.caja {
+  min-height: 60px;
+}
+
+.fila-contenedores {
+  height: 400px;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.verde {
+  background-color: green;
+}
+
+.gris {
+  background-color: gray;
+  height: 400px;
+}
+
+.box {
+  height: 200px;
+  background-color: #3498db;
+  border: 2px solid black;
+}
