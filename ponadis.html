@@ -1,53 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SICID</title>
 
     <!--No afecta el orden en que los pongamos-->
 
     <!-- Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 
     <!-- CSS Estilos-->
-    <link rel="stylesheet" href="css/ponadis.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/ponadis.css" />
+  </head>
+  <body>
     <!-- <i class="fa-solid fa-bell presonalizacion-icono" aria-hidden="true"></i> -->
 
     <!-- Ejercicio: Personalizar el ícono para que tenga un borde: 1px solid #cccccc; border-radius: 3px y el tamño de 24px -->
-    
-    <!-- TOBAR (Barra Superior) -->
-    <div class="container-flud tobar"> <!-- Fila 1-->
-        <div class="row"> <!-- Fila 1-->
-            <div class="col-3"> <!-- Columna 1-->
-                <a href="#" class="text-decoration-none logo">
-                    <span>SICID <small>Intranet</small></span> <!--Es igual que un div (contenedor de una sola linea) -->
-                </a>
-            </div>
 
-            <div class="col-3"> <!-- Columna 2-->
-                <p class="parrafo-rol">
-                    PONADIS -<span class="visually-hidden">Rol:</span> Administrador
-                </p>
-                <!-- Tarea Moral 1: Dar el efecto visual del diseño al <p> del rol-->
-                <!-- Tarea Moral 2: Investigar propiedades de bootstrap-->
-
-            </div>
-
-            <div class="col-3"> <!-- Columna 3-->
-
-            </div>
+    <!-- TOPBAR (Barra Superior) -->
+    <div class="container-fluid topbar">
+      <!-- Fila 1-->
+      <div class="row d-flex align-items-center h-100">
+        <!-- Fila 1-->
+        <div class="col-3 text-start">
+          <!-- Columna 1-->
+          <a href="#" class="text-decoration-none logo">
+            <span>SICID <small>Intranet</small></span>
+            <!--Es igual que un div (contenedor de una sola linea) -->
+          </a>
         </div>
+
+        <div class="col-6 d-flex align-items-center">
+          <!-- Columna 2-->
+          <p class="mb-0">
+            <strong>PONADIS</strong> -<span class="visually-hidden">Rol:</span> Administrador
+          </p>
+          <!-- Tarea Moral 1: Dar el efecto visual del diseño al <p> del rol -->
+          <!-- Tarea Moral 2: Investigar propiedades de bootstrap -->
+        </div>
+
+        <div class="col-3 text-end">
+          <!-- Columna 3: Otras opciones-->
+          <div class="row d-flex align-items-center justify-content-around">
+            <div class="col-3 d-flex align-items-center justify-content-end">
+              <!-- Opciones: - A + -->
+              <button class="btn" aria-label="Disminuir el tamaño de la fuente">
+                <i class="fa-solid fa-minus border rounded-1 p-2" aria-hidden="true"></i>
+              </button>
+
+              <!-- Tarea Moral 4: Hacer accessibles los otros dos botones-->
+              <button class="btn" aria-label="Cambiar tipo de la fuente">
+                <i class="fa-solid fa-a border rounded-1 p-2" aria-hidden="true"></i>
+              </button>
+
+              <button
+                class="btn"
+                aria-label="Incrementar el tamaño de la fuente"
+              >
+                <i class="fa-solid fa-plus border rounded-1 p-2" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="col-1">
+              <!-- Paleta de Colores -->
+              <!--Ejercicio Completar-->
+              <button class="btn" aria-label="Cambiar la paleta de colores">
+                <i class="fa-solid fa-circle-half-stroke border rounded-1 p-2" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="col-1">
+              <!--Notificaciones-->
+              <!--Ejercicio Completar-->
+              <button class="btn" aria-label="Ver Notificaciones">
+                <i class="fa-solid fa-bell" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <!-- Ejercicio: Cambiar  por la columna por la opciones Registrar Usuario / Iniciar sesion -->
+            <div class="col-2">
+              <!--Usuario-->
+              <a href="" class="text-decoration-none mb-0 btn">Iniciar Sesión</a>
+            </div>
+
+            <div class="col-2">
+              <a href="crear-cuenta.html" target="_blank" class="text-decoration-none mb-0 p-1 btn btn-outline-secondary">Crear Cuentas</a>
+            </div>
+
+            <!-- Ejercicio: Crear formulario para registrar usuario y uno formulario para iniciar sesion (Componentes de Bootstrap)-->
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div> <!-- Fila 2-->
 
-    </div>
-</body>
+<!--
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+          <form>
+            <h2>Registrarse</h2>
+            <div class="mb-3">
+              <label for="inputNombre1" class="form-label"
+                >Nombre Completo</label
+              >
+              <input type="text" class="form-control" id="inputNombre1" />
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail1" class="form-label"
+                >Correo Electrónico</label
+              >
+              <input type="email" class="form-control" id="inputEmail1" />
+            </div>
+
+            <div class="mb-3">
+              <label for="inputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword1" />
+            </div>
+
+            <div class="mb-3">
+              <label for="confirmPassword1" class="form-label"
+                >Confirmar Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword1"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Confirmar</button>
+          </form>
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5 mb-4">
+          <form>
+            <h2>Iniciar Sesión</h2>
+            <div class="mb-3">
+              <label for="inputCorreo2" class="form-label"
+                >Correo Electrónico</label
+              >
+              <input type="email" class="form-control" id="inputCorreo2" />
+            </div>
+            <div class="mb-3">
+              <label for="inputContraseña2" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="inputContraseña2"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Iniciar sesión
+            </button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+  </body>
 </html>
