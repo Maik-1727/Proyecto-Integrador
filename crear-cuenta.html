@@ -1,62 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registrate</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Cuenta</title>
 
-    <!-- Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!--Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/crear-cuenta.css">
+</head>
+
+<body>
     <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-5 mb-4">
-          <form>
-            <h2>Registrarse</h2>
-            <div class="mb-3">
-              <label for="inputNombre1" class="form-label"
-                >Nombre Completo</label
-              >
-              <input type="text" class="form-control" id="inputNombre1" />
-            </div>
-            <div class="mb-3">
-              <label for="inputEmail1" class="form-label"
-                >Correo Electrónico</label
-              >
-              <input type="email" class="form-control" id="inputEmail1" />
+        <div class="row bg-dark h-100 d-flex justify-content-between align-items-center topbar">
+            <div class="col-3">
+                <button class="btn">
+                    <i class="fa-solid fa-house text-white fs-3"></i>
+                </button>
             </div>
 
-            <div class="mb-3">
-              <label for="inputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="inputPassword1" />
+            <div class="col-3 text-center ">
+                <span class="text-white">CAMPUSFESTS</span>
             </div>
 
-            <div class="mb-3">
-              <label for="confirmPassword1" class="form-label"
-                >Confirmar Contraseña</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="confirmPassword1"
-              />
+            <div class="col-3 text-end me-3">
+                <button class="btn">
+                    <i class="fa-solid fa-user text-white fs-3 "></i>
+                </button>
             </div>
-            <button type="submit" class="btn btn-primary">Confirmar</button>
-          </form>
         </div>
-      </div>
     </div>
-  </body>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-between">
+        <div class="col-1 side-bar d-flex flex-column">
+            <a href="#" class="btn btn-primary mt-5 mb-3" role="button">Registrarse</a>
+            <a href="#" class="btn btn-primary mb-3" role="button">Crear Stand</a>
+            <a href="#" class="btn btn-primary mb-3" role="button">Crear Actividad</a>
+            <a href="#" class="btn btn-primary mb-3" role="button">Agenda</a>
+            <a href="#" class="btn btn-primary mb-3" role="button">Preguntas Frecuentes</a>
+            
+
+
+        </div>
+        <div class="col-11 d-flex flex-column align-items-center">
+            <h1 class="text-center mt-3 bg-dark-subtle p-3">El mejor Festival Estudiantil</h1>
+
+            <div class="contenedor-parrafo d-flex p-3 text-center">
+                <p class="fs-3">Un párrafo es una unidad fundamental del texto escrito que expresa una idea central o temática. Se compone de un conjunto de oraciones relacionadas entre sí y secuenciales. Visualmente, se distingue por iniciar con letra mayúscula y finalizar con un punto y aparte.</p>
+            </div>
+            
+
+        </div>
+    </div>
+
+    </div>
+</body>
 </html>

@@ -1,0 +1,22 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.topbar{
+    min-height: 100px;
+}
+
+.side-bar{
+    min-height: 800px;
+    background-color: black;
+}
+
+.contenedor-parrafo{
+    height: 25%;
+    width: 75%;
+}
+
+h1{
+    width: 100%;
+}
+
+
